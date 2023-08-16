@@ -12,7 +12,6 @@ class SupportController extends Controller
     {
         $support = new Support();
         $supports = $support->all();
-        dd($supports);
         return view('admin/supports/index',['supports' => $supports]);
     }
 }
